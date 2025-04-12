@@ -1,4 +1,20 @@
 # test-quasar-laravel
+<p>
+This project is for demonstration purposes only.
+The frontend was developed using Quasar, and the backend was developed using Laravel 12.
+Authentication is implemented using Laravel Passport with the password grant type.
+This project follows a decoupled architecture, where the frontend and backend are developed and deployed separately.
+</p>
+
+## Prerequisite
+- docker
+- git
+- Please make sure that the following PORTS ara available:
+```
+9000 - Frontend
+8000 - Backend
+3306 - Database
+```
 
 Development Setup
 
