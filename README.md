@@ -38,7 +38,7 @@ password: password
 ```
 
 ## Demo Video
-https://drive.google.com/file/d/1mF5IDvvWtqY7kfh5hjMfukfLAFEz6TXA/view?usp=sharing
+https://drive.google.com/file/d/1VKGLAhtoNXLUBKmplv8HaiEMdvIUa9CI/view?usp=sharing
 
 ## Screen
 ![Screenshot 2025-04-11 at 8 04 02 PM](https://github.com/user-attachments/assets/3dd6140f-06fa-4e03-9891-abc3f5d8009d)
