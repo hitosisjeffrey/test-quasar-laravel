@@ -31,16 +31,20 @@ Your folder structure should be similar to: <br>
 docker compose build && docker compose up -d
 ```
 ## backend setup database migration and seed
-1.) Inside the backend container, (/var/www), run the following command: 
+1.) In your terminal, run the following command. 
 ```
-php artisan migrate:refresh --seed
+docker exec backend php artisan migrate:refresh --seed
 ```
 To create an Oauth Client, run the following command:
 ```
-php artisan passport:client --password
+docker exec backend php artisan passport:client --password
 ```
-
-Copy the client_id and the secret into the frontend/.env file.
+The output should be similar to:
+```
+  Client ID ............................. 9ea96633-98e7-4a35-87af-1ec973b9de72  
+  Client secret ..................... GoniVC4hVmeBzhMOLFrna9sR5qGJPg6XUP9FAaHL
+```
+Copy the Client ID and the Client secret into the frontend/.env file. (Replace the VITE_CLIENT_ID with the Client ID and the VITE_CLIENT_SECRET with the Client secret)
 ```
 VITE_API_URL=http://127.0.0.1:8000
 VITE_CLIENT_ID=9ea60e78-9677-487e-a8be-a29683c23404
