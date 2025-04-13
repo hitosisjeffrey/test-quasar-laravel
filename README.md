@@ -35,6 +35,31 @@ docker compose build && docker compose up -d
 ```
 docker exec backend php artisan migrate:refresh --seed
 ```
+
+Your should see the following output:
+```
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .......................... 83.24ms DONE
+  0001_01_01_000001_create_cache_table .......................... 26.42ms DONE
+  0001_01_01_000002_create_jobs_table ........................... 68.00ms DONE
+  2025_04_10_113016_create_oauth_auth_codes_table ............... 22.23ms DONE
+  2025_04_10_113017_create_oauth_access_tokens_table ............ 24.33ms DONE
+  2025_04_10_113018_create_oauth_refresh_tokens_table ........... 26.95ms DONE
+  2025_04_10_113019_create_oauth_clients_table .................. 23.11ms DONE
+  2025_04_10_113020_create_oauth_personal_access_clients_table .. 10.45ms DONE
+  2025_04_10_120350_create_blogs_table .......................... 55.69ms DONE
+  2025_04_11_022905_add_soft_deletes_to_blogs_table ............. 32.89ms DONE
+
+
+   INFO  Seeding database.  
+
+  Database\Seeders\UserSeeder ........................................ RUNNING  
+  Database\Seeders\UserSeeder .................................. 1,031 ms DONE  
+
+  Database\Seeders\BlogSeeder ........................................ RUNNING  
+  Database\Seeders\BlogSeeder .................................... 195 ms DONE 
+```
 To create an Oauth Client, run the following command:
 ```
 docker exec backend php artisan passport:client --password
