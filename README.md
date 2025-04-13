@@ -88,9 +88,11 @@ https://drive.google.com/file/d/1VKGLAhtoNXLUBKmplv8HaiEMdvIUa9CI/view?usp=shari
 ## Screen
 ![Screenshot 2025-04-11 at 8 04 02 PM](https://github.com/user-attachments/assets/3dd6140f-06fa-4e03-9891-abc3f5d8009d)
 
-## Notes
+## Testing
 - I created a simple end to end testing for Blog 
 ```
-php artisan test
+docker exec backend php artisan test
 ```
+![Screenshot 2025-04-13 at 8 42 14 AM](https://github.com/user-attachments/assets/87a9b01c-654c-4bf9-9196-27821f325398)
+
 - I can setup the CI/CD for this as well using github workflows 
